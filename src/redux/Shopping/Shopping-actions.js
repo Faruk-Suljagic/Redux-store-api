@@ -31,3 +31,16 @@ export const loadCurrentItem = (item) => {
     payload: item,
   };
 };
+
+export const loadProducts = () => (dispatch) => {
+  let API = "https://fakestoreapi.com/products";
+  let result = fetch(API).then((data) => {
+    data.json().then((dataJson) => {
+      console.warn("in action", dataJson);
+      return dispatch({
+        type: "ADD_PRODUCT",
+        payload: dataJson,
+      });
+    });
+  });
+};

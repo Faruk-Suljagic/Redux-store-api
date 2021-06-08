@@ -8,6 +8,8 @@ const SingleItem = ({ currentItem, addToCart }) => {
   return (
     <div className={styles.singleItem} key={currentItem.id}>
       <img
+        width="450px"
+        height="450px"
         className={styles.singleItem__image}
         src={currentItem.image}
         alt={currentItem.title}

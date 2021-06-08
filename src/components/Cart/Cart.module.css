@@ -12,6 +12,7 @@
 
 .cart__summary {
   height: 250px;
+  width: 30%;
   flex: 0.3;
   display: flex;
   flex-direction: column;
@@ -19,6 +20,8 @@
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   border-radius: 10px;
+  position: fixed;
+  right: 20px;
 }
 
 .summary__title {
@@ -46,8 +49,8 @@
   padding: 10px 17px;
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
-  background: var(--primary-color);
-  color: var(--light-color);
+  background: rgb(253, 211, 0);
+  color: #000;
   font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;

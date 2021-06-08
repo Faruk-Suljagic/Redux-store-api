@@ -10,6 +10,10 @@ import {
 } from "../../../redux/Shopping/Shopping-actions";
 
 const Product = ({ item, addToCart, loadCurrentItem }) => {
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(loadProducts());
+  // }, [dispatch, loadProducts]);
   return (
     <div className={styles.product} key={item.id}>
       <img
