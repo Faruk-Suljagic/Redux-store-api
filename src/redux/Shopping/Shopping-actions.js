@@ -34,7 +34,7 @@ export const loadCurrentItem = (item) => {
 
 export const loadProducts = () => (dispatch) => {
   let API = "https://fakestoreapi.com/products";
-  let result = fetch(API).then((data) => {
+  fetch(API).then((data) => {
     data.json().then((dataJson) => {
       console.warn("in action", dataJson);
       return dispatch({
